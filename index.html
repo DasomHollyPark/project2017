@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-
+<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
 <link rel="stylesheet" type = "text/css" href = "style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
+<script src="typed.js"></script>
 
 </head>
 
@@ -15,14 +15,22 @@
 <img src = "https://s30.postimg.org/lzzckwmip/3fjiywswhsk_chris_greenhow.jpg" id = "deer">
 </div>
 
+<div class="logo"></div>
+
 
 <script>
 
 $(function(){
 	$('#deer').animate(
-		{opacity: "0.7"},500, function(){});
+		{opacity: "0.8"},800, function(){});
 });
 
+  $(function(){
+      $(".logo").typed({
+        strings: ["Dasom"],
+        typeSpeed: 50
+      });
+  });
 
 </script>
 
