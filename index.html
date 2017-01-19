@@ -1,12 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
+
 <link rel="stylesheet" type = "text/css" href = "style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 
 </head>
 
 <body>
 
+<div id = "landing_page">
+<img src = "https://s30.postimg.org/lzzckwmip/3fjiywswhsk_chris_greenhow.jpg" id = "deer">
+</div>
+
+
+<script>
+
+$(function(){
+	$('#deer').animate(
+		{opacity: "0.7"},500, function(){});
+});
+
+
+</script>
 
 </body>
 </html>

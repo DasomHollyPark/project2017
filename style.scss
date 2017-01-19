@@ -1,5 +1,18 @@
-$color : red;
+$color : blue;
 
-body{
-	background-color : $color;
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#landing_page{
+
+}
+
+#deer{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: -40px;
 }
