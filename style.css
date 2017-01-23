@@ -1,17 +1,20 @@
-* {
+html, body, #landing_page, #background_deer {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  height: 100%; }
 
-#deer {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: -40px; }
+#background_deer {
+  background-image: url("https://s30.postimg.org/lzzckwmip/3fjiywswhsk_chris_greenhow.jpg");
+  background-size: 100% 100%; }
 
 .logo {
   font-family: 'Alfa Slab One', cursive;
-  font-size: 200px; }
+  font-size: 120px;
+  -webkit-text-fill-color: transparent;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 6px;
+  -webkit-text-stroke-color: white;
+  text-align: center; }
 
 .typed-cursor {
   opacity: 1;

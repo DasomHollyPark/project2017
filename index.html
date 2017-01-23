@@ -12,23 +12,28 @@
 <body>
 
 <div id = "landing_page">
-<img src = "https://s30.postimg.org/lzzckwmip/3fjiywswhsk_chris_greenhow.jpg" id = "deer">
+
+<div id = "background_deer">
+	
+<div class="logo"></div>
+
 </div>
 
-<div class="logo"></div>
+</div>
 
 
 <script>
 
 $(function(){
-	$('#deer').animate(
+	$('#background_deer').animate(
 		{opacity: "0.8"},800, function(){});
 });
 
   $(function(){
       $(".logo").typed({
-        strings: ["Dasom"],
-        typeSpeed: 50
+        strings: ["Dasom Park", "Frontend Developer", "Software Developer"],
+        typeSpeed: 50,
+        loop: true
       });
   });
 
