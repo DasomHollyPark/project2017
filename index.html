@@ -41,14 +41,20 @@
 <script>
 
 
-$(document).ready(function(){
-	$("#scroll_btn").effect( "shake", 
-   { 
-    direction: "up", 
-    times: 3, 
-    distance: 10
-   }, 1000 );
+$(function(){
+	$("#scroll_btn").effect( "shake", { direction: "up", times: 2, distance: 10 }, 1000 )
+	
 });
+
+$(function(){
+	$('#scroll_btn').mouseover(function(){
+			$("#scroll_btn").effect( "shake", { direction: "up", times: 2, distance: 10 }, 1000 );
+		})
+	});
+
+
+
+
 
 	$(function(){
 		$('#background_deer').animate(
