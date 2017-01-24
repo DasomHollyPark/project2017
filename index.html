@@ -41,29 +41,15 @@
 <script>
 
 
+
+
+/*background image opacity changer on page load*/
 $(function(){
-	$("#scroll_btn").effect( "shake", { direction: "up", times: 2, distance: 10 }, 1000 )
-	
+		$('#background_deer').animate( {opacity: "0.8"},800, function(){});
 });
 
+/*Typing animation*/
 $(function(){
-	$('#scroll_btn').mouseover(function(){
-			$("#scroll_btn").effect( "shake", { direction: "up", times: 2, distance: 10 }, 1000 );
-		})
-	});
-
-
-
-
-
-	$(function(){
-		$('#background_deer').animate(
-			{opacity: "0.8"},800, function(){});
-	});
-
-
-
-  $(function(){
       $(".logo").typed({
         strings: ["Dasom Park^800", "Frontend<br>+<br>Software<br>Developer"],
         typeSpeed: 50,
@@ -72,17 +58,28 @@ $(function(){
         showCursor: true,
         cursorChar: "|"
       });
-  });
+});
 
+/*Shake animation on scroll button (when page loads)*/
+$(function(){
+	$("#scroll_btn").effect( "shake", { direction: "up", times: 2, distance: 10 }, 1000 )
+	
+});
 
+/*Shake animation on scroll button (when user hovers on it)*/
+$(function(){
+	$('#scroll_btn').mouseover(function(){
+			$("#scroll_btn").effect( "shake", { direction: "up", times: 2, distance: 10 }, 1000 );
+	})
+});
 
-  $('#scroll_btn').click(function(){
+/*Scroll down to About Me page on button click*/
+$(function(){$('#scroll_btn').click(function(){
   	$('html, body').animate({
-  		scrollTop: $('#about_page').offset().top
-
+  			scrollTop: $('#about_page').offset().top
   	},1000);
-
-  });
+	})
+});
 
 
 
