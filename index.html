@@ -43,13 +43,21 @@
 
   $(function(){
       $(".logo").typed({
-        strings: ["Dasom Park^800", "Frontend <br>+<br> Software <br> Developer"],
+        strings: ["Dasom Park^800", "Frontend<br>+<br>Software<br>Developer"],
         typeSpeed: 50,
         loop: true,
         contentType: 'html',
         showCursor: true,
         cursorChar: "|",
       });
+  });
+
+  $('#scroll_btn').click(function(){
+  	$('html, body').animate({
+  		scrollTop: $('#about_page').offset().top
+
+  	},1000);
+
   });
 
 
