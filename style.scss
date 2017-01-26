@@ -29,7 +29,6 @@ html, body, #landing_page, #background_deer{
 }
 
 
-
 .logo{
 	font-size:80px;
 	opacity: 0.8;
@@ -97,6 +96,7 @@ span.glyphicon.glyphicon-chevron-down {
 #profile{
 	display: block;
     width: 300px;
+    float: left;
 }
 
 #profile_img{
@@ -116,6 +116,27 @@ span.glyphicon.glyphicon-chevron-down {
 	margin-top: -15%;
 }
 
+#name{
+    font-size: 70px;
+    -webkit-text-fill-color: white;
+    float: right;
+    margin-top: 100px;
+    border-bottom: 7px solid white;
+    display: none;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+#job{
+	color: white;
+    float: right;
+    margin-right: 27%;
+    margin-top: 0px;
+    font-size: 25px;
+    float: right;
+    display: none;
+}
 /* Mobile */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 

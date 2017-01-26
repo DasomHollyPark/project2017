@@ -42,14 +42,17 @@
 		<img id = "profile_img" src = "https://s30.postimg.org/pdhxb3gi9/imageedit_2_2999178752.gif">
 	</div>
 
+	<div id = "name_wrapper">
+		<h1 id = "name">Dasom Park</h1>
+		<h1 id = "job">Frontend / Software Developer</h1>
+	</div>
 	<div id = "profile_text">
 		<p id = "profile_text_p"></p>
 	</div>
 
 </div>
 
-<div id = "">
-</div>
+
 
 
 <script>
@@ -90,19 +93,27 @@ $(function(){
 /*Scroll down to About Me page on button click*/
 $(function(){$('#scroll_btn').click(function(){
 	$('#profile_img').css("display","none");
+	$('#name, #job').css("display","none");
   	$('html, body').animate({
   			scrollTop: $('#about_page').offset().top
   	},1000);
 	$('#profile_img').fadeIn(2000);
 	$('#profile').animate({ 'margin-left' : '10%' },2000);
+	$('#name, #job').animate({ 'margin-right' : '18%' });
+	$('#name, #job').fadeIn(2000);
+
 	});
 });
 
 /*Profile Image fades in*/
 $('#about_page').ready(function(){
 	$('#profile_img').css("display","none");
+	$('#name, #job').css("display","none");
 	$('#profile_img').fadeIn(2000);
 	$('#profile').animate({ 'margin-left' : '10%' },1000);
+	$('#name, #job').animate({ 'margin-right' : '18%' });
+	$('#name, #job').fadeIn(2000);
+
 	
 })
 
