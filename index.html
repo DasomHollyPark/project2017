@@ -87,10 +87,16 @@ $(function(){$('#scroll_btn').click(function(){
   	$('html, body').animate({
   			scrollTop: $('#about_page').offset().top
   	},1000);
+	$('#profile_img').css("display","none");
+  	$('#profile_img').fadeIn(3000);
 	})
 });
 
-
+/*Profile Image fades in*/
+$('#about_page').ready(function(){
+	$('#profile_img').css("display","none");
+	$('#profile_img').fadeIn(3000);
+})
 
 </script>
 
