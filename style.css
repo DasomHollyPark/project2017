@@ -1,26 +1,34 @@
 html, body, #landing_page, #background_deer {
   margin: 0;
   padding: 0;
-  height: 100%; }
+  height: 100%;
+  font-family: 'Alfa Slab One', cursive; }
+
+#header {
+  background: url("https://s30.postimg.org/vuypld335/background.png");
+  height: 70px;
+  margin-top: 50px; }
 
 .logo_wrapper {
-  display: inline-block; }
+  display: inline-block;
+  width: 60%;
+  margin-top: 3%; }
 
 #background_deer {
   background-image: url("https://s30.postimg.org/lzzckwmip/3fjiywswhsk_chris_greenhow.jpg");
   background-size: 100% 100%;
   text-align: center;
-  min-device-width: 768px; }
+  min-device-width: 768px;
+  overflow: auto; }
 
 .logo {
-  font-family: 'Alfa Slab One', cursive;
-  font-size: 120px;
+  font-size: 80px;
   opacity: 0.8;
   -webkit-text-fill-color: white;
   /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 6px;
   -webkit-text-stroke-color: black;
-  text-align: center;
+  text-align: left;
   display: inline; }
 
 .typed-cursor {
@@ -28,7 +36,7 @@ html, body, #landing_page, #background_deer {
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
-  font-size: 150px;
+  font-size: 80px;
   opacity: 0.8;
   -webkit-text-fill-color: white;
   /* Will override color (regardless of order) */
@@ -59,7 +67,7 @@ html, body, #landing_page, #background_deer {
 #about_page {
   width: 100%;
   height: 100%;
-  background-color: #c6c9ce; }
+  background-image: url("https://s30.postimg.org/4hpj1aelt/stardust.png"); }
 
 span.glyphicon.glyphicon-chevron-down {
   font-size: 100px;
@@ -72,6 +80,13 @@ span.glyphicon.glyphicon-chevron-down {
   position: absolute;
   bottom: 0px;
   width: 100%; }
+
+#profile {
+  width: 300px; }
+
+#profile_img {
+  width: 100%;
+  height: 100%; }
 
 /* Mobile */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
