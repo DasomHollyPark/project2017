@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-
 <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
 <link rel="stylesheet" type = "text/css" href = "style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
@@ -12,6 +11,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
 
 </head>
 
@@ -28,8 +28,9 @@
 		<div class = "logo_wrapper">
 			<div class="logo"></div>
 		</div>
+		
 		<div id = "scroll_btn">
-		<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+			<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
 		</div>
 	</div>
 
@@ -37,9 +38,13 @@
 
 <div id ="about_page">
 
-<div id = "profile">
-<img id = "profile_img" src = "https://s30.postimg.org/pdhxb3gi9/imageedit_2_2999178752.gif">
-</div>
+	<div id = "profile" class = "animated bounce">
+		<img id = "profile_img" src = "https://s30.postimg.org/pdhxb3gi9/imageedit_2_2999178752.gif">
+	</div>
+
+	<div id = "profile_text">
+		<p id = "profile_text_p"></p>
+	</div>
 
 </div>
 
@@ -84,19 +89,30 @@ $(function(){
 
 /*Scroll down to About Me page on button click*/
 $(function(){$('#scroll_btn').click(function(){
+	$('#profile_img').css("display","none");
   	$('html, body').animate({
   			scrollTop: $('#about_page').offset().top
   	},1000);
-	$('#profile_img').css("display","none");
-  	$('#profile_img').fadeIn(3000);
-	})
+	$('#profile_img').fadeIn(2000);
+	$('#profile').animate({ 'margin-left' : '10%' },2000);
+	});
 });
 
 /*Profile Image fades in*/
 $('#about_page').ready(function(){
 	$('#profile_img').css("display","none");
-	$('#profile_img').fadeIn(3000);
+	$('#profile_img').fadeIn(2000);
+	$('#profile').animate({ 'margin-left' : '10%' },1000);
+	
 })
+
+/*Shake animation on profile image (when user hovers on it)*/
+$(function(){
+	$('#profile_img').mouseover(function(){
+			$("#profile_img").effect( "shake", { direction: "left", times: 2, distance: 10 }, 1000 );
+	})
+});
+
 
 </script>
 

@@ -83,7 +83,6 @@ span.glyphicon.glyphicon-chevron-down {
 
 #profile {
   display: block;
-  margin: 0 auto;
   width: 300px; }
 
 #profile_img {
@@ -91,6 +90,14 @@ span.glyphicon.glyphicon-chevron-down {
   height: 100%;
   margin-top: 30px;
   display: none; }
+
+#profile_text {
+  background: url("https://s30.postimg.org/vuypld335/background.png");
+  height: 60%;
+  display: none; }
+
+#profile_text_p {
+  margin-top: -15%; }
 
 /* Mobile */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
