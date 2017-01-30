@@ -19,7 +19,8 @@ html, body, #landing_page, #background_deer {
   background-size: 100% 100%;
   text-align: center;
   min-device-width: 768px;
-  overflow: auto; }
+  overflow: auto;
+  background-attachment: fixed; }
 
 .logo {
   font-size: 80px;
@@ -108,7 +109,8 @@ span.glyphicon.glyphicon-chevron-down {
   border-bottom: 7px solid white;
   display: none;
   padding-left: 100px;
-  padding-right: 100px; }
+  padding-right: 100px;
+  font-family: 'Nunito', sans-serif; }
 
 #job {
   color: white;
@@ -117,7 +119,13 @@ span.glyphicon.glyphicon-chevron-down {
   margin-top: 0px;
   font-size: 25px;
   float: right;
-  display: none; }
+  display: none;
+  font-family: 'Nunito', sans-serif; }
+
+#project_page {
+  width: 100%;
+  height: 100%;
+  background-color: red; }
 
 /* Mobile */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
